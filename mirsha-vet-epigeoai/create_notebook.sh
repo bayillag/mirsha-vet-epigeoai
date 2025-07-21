@@ -1,3 +1,22 @@
+#!/bin/bash
+
+# ==============================================================================
+# Bash Script to Create the Mirsha VetEpiGeoAI Analysis Notebook
+# ==============================================================================
+
+# --- Configuration ---
+NOTEBOOK_DIR="notebooks"
+NOTEBOOK_FILE="$NOTEBOOK_DIR/Mirsha_VetEpiGeoAI_Analysis.ipynb"
+
+# --- Main Execution ---
+echo "📝 Creating the analysis notebook..."
+
+# 1. Create the notebooks directory if it doesn't exist
+mkdir -p "$NOTEBOOK_DIR"
+echo "✅ Directory '$NOTEBOOK_DIR' is ready."
+
+# 2. Write the entire JSON content to the .ipynb file using a heredoc
+cat > "$NOTEBOOK_FILE" << 'EOF'
 {
  "cells": [
   {
@@ -102,3 +121,6 @@
  "nbformat": 4,
  "nbformat_minor": 2
 }
+EOF
+
+echo "✅ Notebook file '$NOTEBOOK_FILE' created successfully."
