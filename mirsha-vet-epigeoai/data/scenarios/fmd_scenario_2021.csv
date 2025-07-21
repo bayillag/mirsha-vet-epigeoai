@@ -1,0 +1,7 @@
+record_id,event_type,event_date,woreda_name,species,complaint,cases,deaths,latitude,longitude,serotype
+1,initial_report,2021-03-01,Bena Tsemay,Cattle,"Farmer reports 2 cattle lame, not eating, blisters on mouth",,,5.33,36.75,
+2,case_finding,2021-03-03,Bena Tsemay,Cattle,,15,2,5.34,36.76,
+3,lab_result,2021-03-05,,,,,,,FMD-Type O
+4,contact_trace,2021-03-06,Gode Market,Cattle,"Animals sold at market on 2021-02-25",,,,4.95,36.25,
+5,case_finding,2021-03-10,Dassenech,Cattle,"New cases found in woreda linked to Gode Market",40,5,4.88,36.00,
+6,lab_result,2021-03-12,,,,,,,FMD-Type O

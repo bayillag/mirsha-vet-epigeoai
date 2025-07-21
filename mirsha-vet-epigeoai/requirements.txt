@@ -12,3 +12,9 @@ scikit-learn
 branca
 ipywidgets
 pytest
+Flask
+networkx
+pyvis
+biopython
+plotly
+scipy
