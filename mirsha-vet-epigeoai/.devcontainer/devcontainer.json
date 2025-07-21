@@ -1,0 +1,23 @@
+{
+"name": "Mirsha VetEpiGeoAI Comprehensive Platform",
+"dockerComposeFile": "docker-compose.yml",
+"service": "app",
+"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+"customizations": {
+"vscode": {
+"settings": {
+"python.defaultInterpreterPath": "/usr/local/bin/python",
+"python.linting.pylintEnabled": true,
+"python.testing.unittestEnabled": false,
+"python.testing.pytestEnabled": true
+},
+"extensions": [
+"ms-python.python", "ms-python.vscode-pylint", "ms-toolsai.jupyter",
+"ms-azuretools.vscode-docker", "cweijan.vscode-postgresql-client2"
+]
+}
+},
+"forwardPorts": [5432, 8501],
+"postCreateCommand": "pip install --user -r requirements.txt",
+"remoteUser": "vscode"
+}

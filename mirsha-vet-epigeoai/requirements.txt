@@ -1,0 +1,14 @@
+streamlit
+pandas
+geopandas
+pysal
+esda
+folium
+supabase
+psycopg2-binary
+python-dotenv
+matplotlib
+scikit-learn
+branca
+ipywidgets
+pytest
